@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    padding:30px;
+    background:#6fa84f;
+    font-family:monospace;
+}
+
+.game-window{
+    max-width:700px;
+    margin:auto;
+
+    background:#c6c6c6;
+
+    border-top:6px solid #ffffff;
+    border-left:6px solid #ffffff;
+
+    border-right:6px solid #555555;
+    border-bottom:6px solid #555555;
+
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+.image-area{
+    text-align:center;
+}
+
+.image-area img{
+    width:300px;
+    max-width:100%;
+}
+
+.input-area{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:20px;
+}
+
+input{
+    padding:12px;
+    border:3px solid #555;
+    font-size:16px;
+}
+
+button{
+    margin-top:20px;
+
+    background:#8b8b8b;
+
+    border-top:4px solid #fff;
+    border-left:4px solid #fff;
+
+    border-right:4px solid #444;
+    border-bottom:4px solid #444;
+
+    padding:12px;
+
+    cursor:pointer;
+    font-size:18px;
+}
+
+.button-area{
+    text-align:center;
+}
+
+.hidden{
+    display:none;
+}
+
+.coin-animation{
+    animation:coinToss 1s forwards;
+}
+
+@keyframes coinToss{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(2);
+        opacity:0;
+    }
+
+}
+
+#resultContainer{
+    margin-top:30px;
+    text-align:center;
+}
+
+#veil{
+
+    background:#7b5a36;
+
+    color:white;
+
+    border-top:4px solid #a77a4d;
+    border-left:4px solid #a77a4d;
+
+    border-right:4px solid #4f3921;
+    border-bottom:4px solid #4f3921;
+
+    padding:30px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    text-align:center;
+
+    margin-top:20px;
+}
+
+#resultArea{
+    text-align:center;
+    margin-top:20px;
+}
+
+#veil.opened{
+
+    opacity:0;
+
+    pointer-events:none;
+}
+
+#selectedChoice{
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:#1f6f1f;
+}
+
+#coinSide{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:14px;
+}
+
+#retryBtn{
+    display:none;
+}

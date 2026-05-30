@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>運命選択アプリ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="game-window">
+
+    <h1>運命選択アプリ</h1>
+
+    <div class="image-area">
+        <img id="mainImage"
+             src="image/wakaremichi_woman.png"
+             alt="">
+    </div>
+
+    <div class="input-area">
+
+        <label>表なら</label>
+        <input id="heads" type="text">
+
+        <label>裏なら</label>
+        <input id="tails" type="text">
+
+    </div>
+
+	<div class="button-area">
+		<button id="tossBtn">
+			運命を決める
+		</button>
+	</div>
+
+	<div id="resultContainer" class="hidden">
+
+    	<h2>運命は決まりました</h2>
+
+	    <div id="veil">
+	        クリックして確認
+	    </div>
+
+	    <div id="resultArea" class="hidden">
+
+	        <div id="selectedChoice"></div>
+
+	        <div id="coinSide"></div>
+
+	        <button id="retryBtn">
+	            新しい運命を決める
+	        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
